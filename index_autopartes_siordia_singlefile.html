@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autopartes Siordia — Catálogo</title>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black text-white">
+    <div id="root"></div>
+
+    <script type="text/javascript">
+      const { useState, useMemo, useEffect } = React;
+
+      const mxn = (n) => n?.toLocaleString("es-MX", { style: "currency", currency: "MXN", maximumFractionDigits: 0 });
+      const tagCls = {
+        disponible: "bg-emerald-600/20 text-emerald-300 border-emerald-400/40",
+        agotado: "bg-rose-600/20 text-rose-300 border-rose-400/40",
+        usado: "bg-amber-600/20 text-amber-300 border-amber-400/40",
+        nuevo: "bg-sky-600/20 text-sky-300 border-sky-400/40",
+        envio: "bg-indigo-600/20 text-indigo-300 border-indigo-400/40",
+      };
+
+      function App(){
+        const [query, setQuery] = useState("");
+        const [brand, setBrand] = useState("todos");
+        const [year, setYear] = useState("todos");
+        const [cat, setCat] = useState("todos");
+        const [cond, setCond] = useState("todas");
+        const [onlyAvail, setOnlyAvail] = useState(false);
+        const [active, setActive] = useState(null);
+        const [showAdd, setShowAdd] = useState(false);
+        const [showImport, setShowImport] = useState(false);
+
+        const [items, setItems] = useState(()=>{
+          try { const s = localStorage.getItem("autos_catalog"); return s? JSON.parse(s) : PRODUCTS; } catch { return PRODUCTS; }
+        });
+        useEffect(()=>{ try { localStorage.setItem("autos_catalog", JSON.stringify(items)); } catch {} }, [items]);
+
+        const brands = useMemo(()=> ["todos", ...Array.from(new Set(items.map(p=>p.make))).sort()], [items]);
+        const years  = useMemo(()=> ["todos", ...Array.from(new Set(items.map(p=>p.year))).sort((a,b)=>b-a)], [items]);
+        const cats   = useMemo(()=> ["todos", ...Array.from(new Set(items.map(p=>p.category))).sort()], [items]);
+
+        const filtered = useMemo(()=> items.filter(p=>{
+          if (brand!=="todos" && p.make!==brand) return false;
+          if (year!=="todos" && p.year!==Number(year)) return false;
+          if (cat!=="todos" && p.category!==cat) return false;
+          if (cond!=="todas" && p.condition!==cond) return false;
+          if (onlyAvail && !p.available) return false;
+          if (query.trim()){
+            const q = query.toLowerCase();
+            const text = [p.title,p.make,p.model,p.vehicle,p.description,(p.oemCodes||[]).join(" ")].join(" ").toLowerCase();
+            if (!text.includes(q)) return false;
+          }
+          return true;
+        }), [brand,year,cat,cond,onlyAvail,query,items]);
+
+        const whatsappMsg = (p) => encodeURIComponent(
+          `Hola Autopartes Siordia 👋\nMe interesa esta pieza:\n• ${p.title}\n• ${p.make} ${p.model} ${p.year}\n• Precio: ${mxn(p.price)}\n• ID: ${p.id}\n¿Disponibilidad y envío a mi CP?`
+        );
+
+        const addItem = (form) => {
+          const id = form.id.value || ((form.make.value||"ITEM").slice(0,4).toUpperCase()+"-"+Date.now());
+          const oems = form.oem.value ? form.oem.value.split(",").map(s=>s.trim()).filter(Boolean) : [];
+          const imgs = form.images.value ? form.images.value.split(",").map(s=>s.trim()).filter(Boolean) : [];
+          const newItem = {
+            id,
+            title: form.title.value,
+            make: form.make.value,
+            model: form.model.value,
+            year: Number(form.year.value||0),
+            category: form.category.value,
+            vehicle: form.vehicle.value,
+            condition: form.condition.value,
+            available: form.available.checked,
+            price: form.price.value ? Number(form.price.value) : null,
+            oemCodes: oems,
+            description: form.description.value,
+            images: imgs,
+          };
+          setItems(prev=>[newItem,...prev]);
+          setShowAdd(false);
+        };
+
+        const importJSON = (text) => {
+          try{
+            const arr = JSON.parse(text);
+            if(!Array.isArray(arr)) throw new Error("El JSON debe ser un array de productos");
+            const byId = Object.fromEntries(items.map(p=>[p.id,p]));
+            arr.forEach(p=>{ if(p && p.id) byId[p.id] = { ...byId[p.id], ...p }; });
+            setItems(Object.values(byId));
+            setShowImport(false);
+          }catch(e){ alert("Error al importar JSON: " + e.message); }
+        };
+
+        const exportJSON = () => {
+          const blob = new Blob([JSON.stringify(items,null,2)], {type:'application/json'});
+          const a = document.createElement('a');
+          a.href = URL.createObjectURL(blob);
+          a.download = 'catalogo_autopartes.json';
+          a.click();
+        };
+
+        return React.createElement("div",{className:"min-h-screen bg-black text-zinc-100"},
+          React.createElement("header",{className:"sticky top-0 z-50 bg-black/80 backdrop-blur border-b border-zinc-800"},
+            React.createElement("div",{className:"max-w-7xl mx-auto px-4 py-4 flex items-center justify-between"},
+              React.createElement("div",{className:"flex items-center gap-3"},
+                React.createElement("div",{className:"w-9 h-9 rounded-xl bg-gradient-to-br from-yellow-400 to-amber-600 shadow-lg"}),
+                React.createElement("div",null,
+                  React.createElement("h1",{className:"text-xl font-semibold tracking-tight text-yellow-400"},"Autopartes Siordia"),
+                  React.createElement("p",{className:"text-xs text-zinc-400 -mt-0.5"},"Catálogo de refacciones — Pachuca, Hgo.")
+                )
+              ),
+              React.createElement("div",{className:"flex items-center gap-2"},
+                React.createElement("button",{onClick:()=>setShowAdd(true), className:"inline-flex items-center gap-2 rounded-xl px-3 py-2 border border-zinc-700 text-sm text-zinc-200 hover:border-yellow-500"},"+ Añadir pieza"),
+                React.createElement("button",{onClick:()=>setShowImport(true), className:"inline-flex items-center gap-2 rounded-xl px-3 py-2 border border-zinc-700 text-sm text-zinc-200 hover:border-yellow-500"},"Importar JSON"),
+                React.createElement("button",{onClick:exportJSON, className:"hidden md:inline-flex items-center gap-2 rounded-xl px-3 py-2 bg-yellow-500 text-black text-sm font-medium hover:bg-yellow-400"},"Exportar JSON"),
+                React.createElement("a",{href:"https://wa.me/526673208191?text="+encodeURIComponent("Hola, vengo del catálogo web."), target:"_blank", className:"hidden md:inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-yellow-500 text-black font-medium hover:bg-yellow-400 transition"},"WhatsApp 6673208191")
+              )
+            ),
+            React.createElement("div",{className:"max-w-7xl mx-auto px-4 pb-4 grid grid-cols-1 md:grid-cols-6 gap-3"},
+              React.createElement("input",{value:query,onChange:(e)=>setQuery(e.target.value),placeholder:"Buscar: modelo, pieza, OEM...",className:"col-span-2 md:col-span-2 w-full rounded-xl bg-zinc-900 border border-zinc-800 px-4 py-2 outline-none focus:ring-2 focus:ring-yellow-500"}),
+              React.createElement("select",{value:brand,onChange:(e)=>setBrand(e.target.value),className:"rounded-xl bg-zinc-900 border border-zinc-800 px-3 py-2"}, brands.map(b=>React.createElement("option",{key:b,value:b},b))),
+              React.createElement("select",{value:year,onChange:(e)=>setYear(e.target.value),className:"rounded-xl bg-zinc-900 border border-zinc-800 px-3 py-2"}, years.map(y=>React.createElement("option",{key:y,value:y},y))),
+              React.createElement("select",{value:cat,onChange:(e)=>setCat(e.target.value),className:"rounded-xl bg-zinc-900 border border-zinc-800 px-3 py-2"}, cats.map(c=>React.createElement("option",{key:c,value:c},c))),
+              React.createElement("select",{value:cond,onChange:(e)=>setCond(e.target.value),className:"rounded-xl bg-zinc-900 border border-zinc-800 px-3 py-2"}, ["todas","usado","nuevo"].map(c=>React.createElement("option",{key:c,value:c},c))),
+              React.createElement("label",{className:"flex items-center gap-2 text-sm text-zinc-300"},
+                React.createElement("input",{type:"checkbox",checked:onlyAvail,onChange:(e)=>setOnlyAvail(e.target.checked)}),"Solo disponibles")
+            )
+          ),
+          React.createElement("section",{className:"max-w-7xl mx-auto px-4 py-8"},
+            React.createElement("div",{className:"rounded-3xl border border-zinc-800 p-6 bg-gradient-to-b from-zinc-900 to-black"},
+              React.createElement("h2",{className:"text-2xl md:text-3xl font-semibold text-yellow-400"},"Refacciones originales listas para envío"),
+              React.createElement("p",{className:"text-zinc-400 mt-1"},"Envíos por Mercado Libre o paquetería. Piezas probadas, fotos reales. Pregunta por compatibilidades y OEM."),
+              React.createElement("div",{className:"mt-4 flex flex-wrap gap-2"},
+                React.createElement("span",{className:"text-xs px-3 py-1 rounded-full border "+tagCls.envio},"Envíos a todo México"),
+                React.createElement("span",{className:"text-xs px-3 py-1 rounded-full border "+tagCls.usado},"Usado"),
+                React.createElement("span",{className:"text-xs px-3 py-1 rounded-full border "+tagCls.disponible},"Stock real")
+              )
+            )
+          ),
+          React.createElement("main",{className:"max-w-7xl mx-auto px-4 pb-12"},
+            filtered.length===0
+              ? React.createElement("p",{className:"text-zinc-400"},"No se encontraron resultados con los filtros actuales.")
+              : React.createElement("div",{className:"grid sm:grid-cols-2 lg:grid-cols-3 gap-6"},
+                  filtered.map(p=>React.createElement("article",{key:p.id,className:"rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-950 hover:border-yellow-600/60 transition"},
+                    React.createElement("div",{className:"aspect-[16/10] bg-zinc-900 relative"},
+                      p.images && p.images[0]
+                        ? React.createElement("img",{src:p.images[0],alt:p.title,className:"w-full h-full object-cover"})
+                        : React.createElement("div",{className:"w-full h-full grid place-items-center text-zinc-600 text-sm"},"Sin foto"),
+                      React.createElement("div",{className:"absolute top-2 left-2 flex flex-wrap gap-1"},
+                        React.createElement("span",{className:"text-[10px] px-2 py-0.5 rounded-full border "+(p.available?tagCls.disponible:tagCls.agotado)}, p.available? "Disponible":"Agotado"),
+                        React.createElement("span",{className:"text-[10px] px-2 py-0.5 rounded-full border "+(p.condition==="usado"?tagCls.usado:tagCls.nuevo)}, p.condition)
+                      )
+                    ),
+                    React.createElement("div",{className:"p-4"},
+                      React.createElement("h3",{className:"font-medium text-zinc-100 line-clamp-2"}, p.title),
+                      React.createElement("p",{className:"text-sm text-zinc-400 mt-1"}, `${p.make} ${p.model} ${p.year}`),
+                      React.createElement("div",{className:"flex items-center justify-between mt-3"},
+                        React.createElement("div",null,
+                          React.createElement("p",{className:"text-lg font-semibold text-yellow-400"}, p.price? mxn(p.price) : "A convenir"),
+                          p.oemCodes && p.oemCodes.length
+                            ? React.createElement("p",{className:"text-xs text-zinc-500 mt-0.5"},"OEM: "+p.oemCodes.slice(0,2).join(", ")+(p.oemCodes.length>2?"…":""))
+                            : null
+                        ),
+                        React.createElement("div",{className:"flex gap-2"},
+                          React.createElement("a",{href:"https://wa.me/526673208191?text="+whatsappMsg(p), target:"_blank", className:"rounded-xl px-3 py-2 bg-yellow-500 text-black text-sm font-medium hover:bg-yellow-400"},"Cotizar"),
+                          React.createElement("button",{onClick:()=>setActive(p), className:"rounded-xl px-3 py-2 border border-zinc-700 text-sm text-zinc-200 hover:border-yellow-500"},"Ver")
+                        )
+                      )
+                    )
+                  ))
+                )
+          ),
+          React.createElement("footer",{className:"border-t border-zinc-800"},
+            React.createElement("div",{className:"max-w-7xl mx-auto px-4 py-8 grid md:grid-cols-3 gap-6 text-sm text-zinc-400"},
+              React.createElement("div",null,
+                React.createElement("p",{className:"text-zinc-200 font-medium"},"Autopartes Siordia"),
+                React.createElement("p",null,"Pachuca, Hidalgo • Envíos a todo México"),
+                React.createElement("p",null,"WhatsApp: ", React.createElement("a",{className:"text-yellow-400 hover:underline",href:"https://wa.me/526673208191",target:"_blank"},"6673208191"))
+              ),
+              React.createElement("div",null,
+                React.createElement("p",{className:"text-zinc-200 font-medium"},"Políticas"),
+                React.createElement("ul",{className:"list-disc ml-5 mt-1"},
+                  React.createElement("li",null,"Fotos reales y piezas probadas cuando es posible"),
+                  React.createElement("li",null,"Garantía de instalación (consultar)"),
+                  React.createElement("li",null,"Envío por Mercado Libre o paquetería"),
+                )
+              ),
+              React.createElement("div",null,
+                React.createElement("p",{className:"text-zinc-200 font-medium"},"Atajos"),
+                React.createElement("div",{className:"mt-2 flex flex-wrap gap-2"},
+                  cats.slice(1,6).map(c=>React.createElement("button",{key:c,onClick:()=>setCat(c),className:"px-3 py-1 rounded-full border border-zinc-700 hover:border-yellow-500 text-zinc-300 text-xs"}, c))
+                )
+              )
+            ),
+            React.createElement("div",{className:"text-center text-xs text-zinc-500 pb-6"}, `© ${new Date().getFullYear()} Autopartes Siordia — Catálogo`)
+          ),
+          // Modals
+          active && React.createElement("div",{className:"fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4", onClick:()=>setActive(null)},
+            React.createElement("div",{className:"max-w-3xl w-full rounded-2xl bg-zinc-950 border border-zinc-800 overflow-hidden", onClick:(e)=>e.stopPropagation()},
+              React.createElement("div",{className:"flex items-center justify-between p-4 border-b border-zinc-800"},
+                React.createElement("h4",{className:"text-lg font-semibold text-yellow-400"}, active.title),
+                React.createElement("button",{onClick:()=>setActive(null),className:"text-zinc-400 hover:text-zinc-200"},"✕")
+              ),
+              React.createElement("div",{className:"grid md:grid-cols-2 gap-0"},
+                React.createElement("div",{className:"aspect-[4/3] bg-zinc-900"}, active.images && active.images[0]
+                  ? React.createElement("img",{src:active.images[0],alt:active.title,className:"w-full h-full object-cover"})
+                  : React.createElement("div",{className:"w-full h-full grid place-items-center text-zinc-600 text-sm"},"Sin foto")
+                ),
+                React.createElement("div",{className:"p-4 space-y-3"},
+                  React.createElement("p",{className:"text-sm text-zinc-300"}, `${active.make} ${active.model} ${active.year} • ${active.vehicle}`),
+                  React.createElement("p",{className:"text-2xl font-semibold text-yellow-400"}, active.price? mxn(active.price):"A convenir"),
+                  active.oemCodes && active.oemCodes.length ? React.createElement("p",{className:"text-xs text-zinc-400"},"OEM: "+active.oemCodes.join(", ")) : null,
+                  React.createElement("div",{className:"flex flex-wrap gap-2"},
+                    React.createElement("span",{className:"text-xs px-3 py-1 rounded-full border " + (active.available?tagCls.disponible:tagCls.agotado)}, active.available? "Disponible":"Agotado"),
+                    React.createElement("span",{className:"text-xs px-3 py-1 rounded-full border " + (active.condition==="usado"?tagCls.usado:tagCls.nuevo)}, active.condition),
+                    React.createElement("span",{className:"text-xs px-3 py-1 rounded-full border "+tagCls.envio},"Envío")
+                  ),
+                  React.createElement("p",{className:"text-sm text-zinc-300 leading-relaxed whitespace-pre-line"}, active.description),
+                  React.createElement("div",{className:"flex gap-2 pt-2"},
+                    React.createElement("a",{href:"https://wa.me/526673208191?text="+whatsappMsg(active),target:"_blank",className:"rounded-xl px-4 py-2 bg-yellow-500 text-black text-sm font-medium hover:bg-yellow-400"},"Pedir por WhatsApp"),
+                    React.createElement("button",{onClick:()=>setActive(null),className:"rounded-xl px-4 py-2 border border-zinc-700 text-sm text-zinc-200 hover:border-yellow-500"},"Cerrar")
+                  )
+                )
+              )
+            )
+          ),
+          showAdd && React.createElement("div",{className:"fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4", onClick:()=>setShowAdd(false)},
+            React.createElement("div",{className:"max-w-3xl w-full rounded-2xl bg-zinc-950 border border-zinc-800 overflow-hidden", onClick:(e)=>e.stopPropagation()},
+              React.createElement("div",{className:"flex items-center justify-between p-4 border-b border-zinc-800"},
+                React.createElement("h4",{className:"text-lg font-semibold text-yellow-400"},"Añadir pieza"),
+                React.createElement("button",{onClick:()=>setShowAdd(false),className:"text-zinc-400 hover:text-zinc-200"},"✕")
+              ),
+              React.createElement("form",{className:"grid md:grid-cols-2 gap-4 p-4", onSubmit:(e)=>{e.preventDefault(); addItem(e.currentTarget); e.currentTarget.reset();}},
+                React.createElement("input",{name:"id",placeholder:"ID (opcional)",className:"rounded-xl bg-zinc-900 border border-zinc-800 px-3 py-2"}),
+                React.createElement("input",{name:"title",required:true,placeholder:"Título (ej. Manija interior puerta izq. — Clio 2005)",className:"rounded-xl bg-zinc-900 border border-zinc-800 px-3 py-2"}),
+                React.createElement("input",{name:"make",required:true,placeholder:"Marca (Renault, Ford, etc.)",className:"rounded-xl bg-zinc-900 border border-zinc-800 px-3 py-2"}),
+                React.createElement("input",{name:"model",required:true,placeholder:"Modelo (Clio, Ka, Astra...)",className:"rounded-xl bg-zinc-900 border border-zinc-800 px-3 py-2"}),
+                React.createElement("input",{name:"year",required:true,type:"number",placeholder:"Año (2005)",className:"rounded-xl bg-zinc-900 border border-zinc-800 px-3 py-2"}),
+                React.createElement("input",{name:"category",required:true,placeholder:"Categoría (Motor, Eléctrico, Interior, Suspensión...)",className:"rounded-xl bg-zinc-900 border border-zinc-800 px-3 py-2"}),
+                React.createElement("input",{name:"vehicle",placeholder:"Vehículo (Clio K4M, Ka 1.6, etc.)",className:"rounded-xl bg-zinc-900 border border-zinc-800 px-3 py-2"}),
+                React.createElement("select",{name:"condition",defaultValue:"usado",className:"rounded-xl bg-zinc-900 border border-zinc-800 px-3 py-2"},
+                  React.createElement("option",{value:"usado"},"usado"),
+                  React.createElement("option",{value:"nuevo"},"nuevo")
+                ),
+                React.createElement("input",{name:"price",type:"number",placeholder:"Precio (MXN)",className:"rounded-xl bg-zinc-900 border border-zinc-800 px-3 py-2"}),
+                React.createElement("label",{className:"flex items-center gap-2 text-sm text-zinc-300"},
+                  React.createElement("input",{name:"available",type:"checkbox",defaultChecked:true}),"Disponible"
+                ),
+                React.createElement("input",{name:"oem",placeholder:"OEM (separados por coma)",className:"rounded-xl bg-zinc-900 border border-zinc-800 px-3 py-2 md:col-span-2"}),
+                React.createElement("input",{name:"images",placeholder:"URLs de imágenes (separadas por coma)",className:"rounded-xl bg-zinc-900 border border-zinc-800 px-3 py-2 md:col-span-2"}),
+                React.createElement("textarea",{name:"description",placeholder:"Descripción",className:"rounded-xl bg-zinc-900 border border-zinc-800 px-3 py-2 md:col-span-2 min-h-[96px]"}),
+                React.createElement("div",{className:"md:col-span-2 flex items-center justify-end gap-2"},
+                  React.createElement("button",{type:"button",onClick:()=>setShowAdd(false),className:"rounded-xl px-4 py-2 border border-zinc-700 text-sm text-zinc-200 hover:border-yellow-500"},"Cancelar"),
+                  React.createElement("button",{type:"submit",className:"rounded-xl px-4 py-2 bg-yellow-500 text-black text-sm font-medium hover:bg-yellow-400"},"Guardar")
+                )
+              )
+            )
+          ),
+          showImport && React.createElement("div",{className:"fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4", onClick:()=>setShowImport(false)},
+            React.createElement("div",{className:"max-w-3xl w-full rounded-2xl bg-zinc-950 border border-zinc-800 overflow-hidden", onClick:(e)=>e.stopPropagation()},
+              React.createElement("div",{className:"flex items-center justify-between p-4 border-b border-zinc-800"},
+                React.createElement("h4",{className:"text-lg font-semibold text-yellow-400"},"Importar desde JSON"),
+                React.createElement("button",{onClick:()=>setShowImport(false),className:"text-zinc-400 hover:text-zinc-200"},"✕")
+              ),
+              React.createElement("div",{className:"p-4 space-y-3"},
+                React.createElement("p",{className:"text-sm text-zinc-300"},"Pega un array JSON con productos. Si hay IDs repetidos, se actualizarán."),
+                React.createElement("textarea",{id:"jsonTextarea",className:"w-full min-h-[220px] rounded-xl bg-zinc-900 border border-zinc-800 px-3 py-2 text-sm",placeholder:'[{"id":"CLIO-MANIJA-INT-IZQ-2005","title":"Manija interior puerta izquierda — Clio 2005","make":"Renault","model":"Clio","year":2005,"category":"Interior","vehicle":"Clio K4M","condition":"usado","available":true,"price":150,"oemCodes":["7700-xxx"],"description":"En buen estado.","images":["https://.../foto.jpg"]}]'}),
+                React.createElement("div",{className:"flex items-center justify-end gap-2"},
+                  React.createElement("button",{onClick:()=>importJSON(document.getElementById("jsonTextarea").value),className:"rounded-xl px-4 py-2 bg-yellow-500 text-black text-sm font-medium hover:bg-yellow-400"},"Importar")
+                )
+              )
+            )
+          )
+        );
+      }
+
+      const PRODUCTS = [];
+      ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App));
+    </script>
+  </body>
+</html>
