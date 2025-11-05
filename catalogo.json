@@ -1,48 +1,1448 @@
 [
   {
+    "id": "CLIO-ALTERNADOR-2005",
+    "title": "Alternador — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Eléctrico",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 950,
+    "oemCodes": [],
+    "description": "Pieza original en buen estado. Envíos a todo México por Mercado Libre o paquetería.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Celectrical%2Charness%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-MARCHA-2005",
+    "title": "Marcha/Arranque — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Eléctrico",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 850,
+    "oemCodes": [],
+    "description": "Probada. Lista para montar.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Celectrical%2Charness%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-TB-2005",
+    "title": "Cuerpo de aceleración — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Admisión",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 1200,
+    "oemCodes": [],
+    "description": "Cuerpo completo, buen ralenti.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cengine%2Cintake%2Cparts%2Cthrottle"
+    ]
+  },
+  {
+    "id": "CLIO-MULT-ADM-2005",
+    "title": "Múltiple de admisión — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Admisión",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 900,
+    "oemCodes": [],
+    "description": "Sin fisuras, listo para uso.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cengine%2Cintake%2Cparts%2Cthrottle"
+    ]
+  },
+  {
+    "id": "CLIO-MULT-ESC-2005",
+    "title": "Múltiple de escape — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Escape",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 700,
+    "oemCodes": [],
+    "description": "Bridas y roscas en buen estado.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cengine%2Cexhaust%2Cintake%2Cparts%2Cthrottle"
+    ]
+  },
+  {
+    "id": "CLIO-CATALIZADOR-2005",
+    "title": "Catalizador — Clio 1.6 16V (usado)",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Escape",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 1800,
+    "oemCodes": [],
+    "description": "Con panal funcional. Consulta disponibilidad.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cexhaust%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-SILENCIADOR-2005",
+    "title": "Silenciador/Muffler — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Escape",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 700,
+    "oemCodes": [],
+    "description": "Sin golpes fuertes. Envío a todo México.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cexhaust%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-RADIADOR-2005",
+    "title": "Radiador — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Enfriamiento",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 1200,
+    "oemCodes": [],
+    "description": "Sin fugas. Panal sano.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Ccooling%2Cparts%2Cradiator"
+    ]
+  },
+  {
+    "id": "CLIO-VENTILADOR-2005",
+    "title": "Ventilador con marco — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Enfriamiento",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 1000,
+    "oemCodes": [],
+    "description": "Motor y aspa funcionando.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Ccooling%2Cparts%2Cradiator"
+    ]
+  },
+  {
+    "id": "CLIO-TERMOSTATO-2005",
+    "title": "Casa de termostato — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Enfriamiento",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 450,
+    "oemCodes": [],
+    "description": "Carcasa con sensor. Buen estado.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Ccooling%2Cparts%2Cradiator"
+    ]
+  },
+  {
+    "id": "CLIO-BOMBA-AGUA-2005",
+    "title": "Bomba de agua — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Enfriamiento",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 450,
+    "oemCodes": [],
+    "description": "Impulsor y eje bien. Sin juego.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Ccooling%2Cparts%2Cradiator"
+    ]
+  },
+  {
+    "id": "CLIO-MANG-RAD-PAR-2005",
+    "title": "Mangueras de radiador (par) — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Enfriamiento",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 300,
+    "oemCodes": [],
+    "description": "Mangueras en buen estado, listas para usar.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Ccooling%2Cparts%2Cradiator"
+    ]
+  },
+  {
+    "id": "CLIO-INYECTORES-SET-2005",
+    "title": "Juego de inyectores — Clio 1.6 16V (set x4)",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Combustible",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 1200,
+    "oemCodes": [],
+    "description": "Set completo, buen patrón de aspersión.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-RIEL-COMBUSTIBLE-2005",
+    "title": "Riel de combustible — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Combustible",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 450,
+    "oemCodes": [],
+    "description": "Conectores en buen estado.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-BOMBA-GAS-ENS-2005",
+    "title": "Bomba de gasolina (ensamble) — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Combustible",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 900,
+    "oemCodes": [],
+    "description": "Módulo completo. Pieza original.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-FILTRO-AIRE-CAJA-2005",
+    "title": "Caja porta-filtro de aire — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Admisión",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 500,
+    "oemCodes": [],
+    "description": "Caja con tapa, orejas sanas.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cengine%2Cgearbox%2Cintake%2Cparts%2Cthrottle%2Ctransmission"
+    ]
+  },
+  {
+    "id": "CLIO-MAF-2005",
+    "title": "Sensor MAF / caudal (si aplica) — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Sensores",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 600,
+    "oemCodes": [],
+    "description": "Sensor funcional. Revisa compatibilidad.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cengine%2Cintake%2Cparts%2Csensor%2Cthrottle"
+    ]
+  },
+  {
+    "id": "CLIO-BOBINA-2005",
+    "title": "Bobina de encendido — Clio 1.6 16V (K4M)",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Encendido",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 450,
+    "oemCodes": [],
+    "description": "Bobina probada. Pieza original.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-CABLES-BUJIA-2005",
+    "title": "Juego de cables de bujía — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Encendido",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 300,
+    "oemCodes": [],
+    "description": "Cables en buen estado. (Usado)",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-TAPA-PUNTERIAS-2005",
+    "title": "Tapa de punterías — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Motor",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 650,
+    "oemCodes": [],
+    "description": "Sin fisuras, empaque recomendable.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cengine%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-POLEA-CIG-2005",
+    "title": "Polea de cigüeñal — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Motor",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 500,
+    "oemCodes": [],
+    "description": "Polea con goma en buen estado.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cengine%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-BOMBA-ACEITE-2005",
+    "title": "Bomba de aceite — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Motor",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 900,
+    "oemCodes": [],
+    "description": "Buen engrane, presión correcta.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cengine%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-SENSOR-CKP-2005",
+    "title": "Sensor de cigüeñal (CKP) — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Sensores",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 350,
+    "oemCodes": [],
+    "description": "Sensor CKP probado. Entrega inmediata.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cengine%2Cparts%2Csensor"
+    ]
+  },
+  {
+    "id": "CLIO-SENSOR-CMP-2005",
+    "title": "Sensor árbol de levas (CMP) — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Sensores",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 350,
+    "oemCodes": [],
+    "description": "Sensor CMP funcional.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cengine%2Cparts%2Csensor"
+    ]
+  },
+  {
+    "id": "CLIO-SENSOR-MAP-2005",
+    "title": "Sensor MAP — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Sensores",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 350,
+    "oemCodes": [],
+    "description": "Sensor de presión absoluto, pieza original.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cengine%2Cparts%2Csensor"
+    ]
+  },
+  {
+    "id": "CLIO-SENSOR-ECT-2005",
+    "title": "Sensor de temperatura refrigerante (ECT) — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Sensores",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 250,
+    "oemCodes": [],
+    "description": "Sensor ECT funcionando.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cengine%2Cparts%2Csensor"
+    ]
+  },
+  {
+    "id": "CLIO-O2-UP-2005",
+    "title": "Sensor de oxígeno (arriba) — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Sensores",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 450,
+    "oemCodes": [],
+    "description": "Sensor O2 upstream en buen estado.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cengine%2Cparts%2Csensor"
+    ]
+  },
+  {
+    "id": "CLIO-O2-DOWN-2005",
+    "title": "Sensor de oxígeno (abajo) — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Sensores",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 400,
+    "oemCodes": [],
+    "description": "Sensor O2 downstream listo.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cengine%2Cparts%2Csensor"
+    ]
+  },
+  {
+    "id": "CLIO-SENSOR-KNOCK-2005",
+    "title": "Sensor de detonación (knock) — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Sensores",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 350,
+    "oemCodes": [],
+    "description": "Sensor de picado.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cengine%2Cparts%2Csensor"
+    ]
+  },
+  {
+    "id": "CLIO-ECU-MOTOR-2005",
+    "title": "Computadora ECU motor — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Eléctrico",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 1900,
+    "oemCodes": [],
+    "description": "ECU probada. Pregunta por inmovilizador.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Celectrical%2Charness%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-BCM-2005",
+    "title": "Módulo BCM/UCH — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Eléctrico",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 1200,
+    "oemCodes": [],
+    "description": "Módulo de carrocería. Buen estado.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Celectrical%2Charness%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-ANILLO-IMMO-2005",
+    "title": "Anillo lector de inmovilizador — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Eléctrico",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 450,
+    "oemCodes": [],
+    "description": "Antena de inmovilizador.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Celectrical%2Charness%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-SWITCH-IGN-2005",
+    "title": "Switch de encendido / chapita — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Eléctrico",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 400,
+    "oemCodes": [],
+    "description": "Con llave (si disponible).",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Celectrical%2Charness%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-FUSEBOX-2005",
+    "title": "Caja de fusibles/relays (UPC) — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Eléctrico",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 700,
+    "oemCodes": [],
+    "description": "Buen estado general.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Celectrical%2Cgearbox%2Charness%2Cparts%2Ctransmission"
+    ]
+  },
+  {
+    "id": "CLIO-ARNES-MOTOR-2005",
+    "title": "Arnés principal de motor — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Eléctrico",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 1500,
+    "oemCodes": [],
+    "description": "Chicotes completos, conectores sanos.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Celectrical%2Charness%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-CAJA-STD-2005",
+    "title": "Caja de transmisión estándar — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Transmisión",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 4500,
+    "oemCodes": [],
+    "description": "Transmisión estándar probada. Garantía de funcionamiento.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cgearbox%2Cparts%2Ctransmission"
+    ]
+  },
+  {
+    "id": "CLIO-FLECHA-IZQ-2005",
+    "title": "Flecha homocinética izquierda — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Transmisión",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 900,
+    "oemCodes": [],
+    "description": "Crucetas y guardapolvos sanos.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cgearbox%2Cparts%2Ctransmission"
+    ]
+  },
+  {
+    "id": "CLIO-FLECHA-DER-2005",
+    "title": "Flecha homocinética derecha — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Transmisión",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 900,
+    "oemCodes": [],
+    "description": "Lista para instalar.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cgearbox%2Cparts%2Ctransmission"
+    ]
+  },
+  {
+    "id": "CLIO-CABLES-SHIFTER-2005",
+    "title": "Cables selectores de cambios — Clio estándar",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Transmisión",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 800,
+    "oemCodes": [],
+    "description": "Movimiento suave, terminales completas.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cgearbox%2Cparts%2Ctransmission"
+    ]
+  },
+  {
+    "id": "CLIO-BOMBA-CLUTCH-2005",
+    "title": "Bomba maestra de clutch — Clio estándar",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Transmisión",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 400,
+    "oemCodes": [],
+    "description": "Sin fugas. Lista para purgar e instalar.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cgearbox%2Cparts%2Ctransmission"
+    ]
+  },
+  {
+    "id": "CLIO-ESCLAVA-CLUTCH-2005",
+    "title": "Bomba esclava de clutch — Clio estándar",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Transmisión",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 400,
+    "oemCodes": [],
+    "description": "Funcional, pieza original.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cgearbox%2Cparts%2Ctransmission"
+    ]
+  },
+  {
+    "id": "CLIO-SOP-CAJA-2005",
+    "title": "Soporte de caja — Clio estándar",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Transmisión",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 450,
+    "oemCodes": [],
+    "description": "Soporte con goma firme.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cgearbox%2Cparts%2Ctransmission"
+    ]
+  },
+  {
+    "id": "CLIO-SOP-MOTOR-DR-2005",
+    "title": "Soporte de motor derecho — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Motor",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 450,
+    "oemCodes": [],
+    "description": "Goma en buen estado.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cengine%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-SOP-MOTOR-IZQ-2005",
+    "title": "Soporte de motor izquierdo — Clio 1.6 16V",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Motor",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 450,
+    "oemCodes": [],
+    "description": "Goma sana.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cengine%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-BASE-BATERIA-2005",
+    "title": "Base de batería — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Accesorios",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 300,
+    "oemCodes": [],
+    "description": "Completa con tornillería (si disponible).",
+    "images": [
+      "https://source.unsplash.com/800x600/?accessory%2Cauto%2Ccar%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-AMORT-DEL-IZQ-2005",
+    "title": "Amortiguador delantero izquierdo — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Suspensión",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 700,
+    "oemCodes": [],
+    "description": "Sin fugas. Incluye base (si disponible).",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cparts%2Cshock%2Csuspension"
+    ]
+  },
+  {
+    "id": "CLIO-AMORT-DEL-DER-2005",
+    "title": "Amortiguador delantero derecho — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Suspensión",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 700,
+    "oemCodes": [],
+    "description": "Buen retorno, sin fugas.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cparts%2Cshock%2Csuspension"
+    ]
+  },
+  {
+    "id": "CLIO-AMORT-TRAS-IZQ-2005",
+    "title": "Amortiguador trasero izquierdo — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Suspensión",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 450,
+    "oemCodes": [],
+    "description": "Funcional, listo para montar.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cparts%2Cshock%2Csuspension"
+    ]
+  },
+  {
+    "id": "CLIO-AMORT-TRAS-DER-2005",
+    "title": "Amortiguador trasero derecho — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Suspensión",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 450,
+    "oemCodes": [],
+    "description": "Listo para instalar.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cparts%2Cshock%2Csuspension"
+    ]
+  },
+  {
+    "id": "CLIO-RESORTE-DEL-2005",
+    "title": "Resorte delantero — Clio (pieza)",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Suspensión",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 250,
+    "oemCodes": [],
+    "description": "Espira sin fisuras. Precio por pieza.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cparts%2Cshock%2Csuspension"
+    ]
+  },
+  {
+    "id": "CLIO-RESORTE-TRAS-2005",
+    "title": "Resorte trasero — Clio (pieza)",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Suspensión",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 250,
+    "oemCodes": [],
+    "description": "Precio por pieza.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cparts%2Cshock%2Csuspension"
+    ]
+  },
+  {
+    "id": "CLIO-HORQUILLA-IZQ-2005",
+    "title": "Horquilla/Control arm izquierda — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Suspensión",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 350,
+    "oemCodes": [],
+    "description": "Buje y rótula en buen estado.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cparts%2Cshock%2Csuspension"
+    ]
+  },
+  {
+    "id": "CLIO-HORQUILLA-DER-2005",
+    "title": "Horquilla/Control arm derecha — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Suspensión",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 350,
+    "oemCodes": [],
+    "description": "Lista para montaje.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cparts%2Cshock%2Csuspension"
+    ]
+  },
+  {
+    "id": "CLIO-BIELETA-IZQ-2005",
+    "title": "Bieleta estabilizadora izquierda — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Suspensión",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 200,
+    "oemCodes": [],
+    "description": "Terminales firmes. Precio por pieza.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cparts%2Cshock%2Csuspension"
+    ]
+  },
+  {
+    "id": "CLIO-BIELETA-DER-2005",
+    "title": "Bieleta estabilizadora derecha — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Suspensión",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 200,
+    "oemCodes": [],
+    "description": "Precio por pieza.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cparts%2Cshock%2Csuspension"
+    ]
+  },
+  {
+    "id": "CLIO-CREMALLERA-2005",
+    "title": "Cremallera de dirección — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Dirección",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 1500,
+    "oemCodes": [],
+    "description": "Sin fugas, movimiento suave.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cparts%2Crack%2Csteering"
+    ]
+  },
+  {
+    "id": "CLIO-BOMBA-DH-2005",
+    "title": "Bomba hidráulica de dirección — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Dirección",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 900,
+    "oemCodes": [],
+    "description": "Buen flujo, sin ruidos.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cparts%2Crack%2Csteering"
+    ]
+  },
+  {
+    "id": "CLIO-COLUMNA-DIR-2005",
+    "title": "Columna de dirección — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Dirección",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 800,
+    "oemCodes": [],
+    "description": "Completa, sin juego excesivo.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cparts%2Crack%2Csteering"
+    ]
+  },
+  {
+    "id": "CLIO-CALIPER-IZQ-2005",
+    "title": "Caliper delantero izquierdo — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Frenos",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 500,
+    "oemCodes": [],
+    "description": "Pistón libre. Precio por pieza.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbrake%2Ccaliper%2Ccar%2Cparts%2Crotor"
+    ]
+  },
+  {
+    "id": "CLIO-CALIPER-DER-2005",
+    "title": "Caliper delantero derecho — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Frenos",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 500,
+    "oemCodes": [],
+    "description": "Precio por pieza.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbrake%2Ccaliper%2Ccar%2Cparts%2Crotor"
+    ]
+  },
+  {
+    "id": "CLIO-DISCO-IZQ-2005",
+    "title": "Disco de freno delantero izquierdo — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Frenos",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 250,
+    "oemCodes": [],
+    "description": "Rectificable. Precio por pieza.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbrake%2Ccaliper%2Ccar%2Cparts%2Crotor"
+    ]
+  },
+  {
+    "id": "CLIO-DISCO-DER-2005",
+    "title": "Disco de freno delantero derecho — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Frenos",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 250,
+    "oemCodes": [],
+    "description": "Rectificable. Precio por pieza.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbrake%2Ccaliper%2Ccar%2Cparts%2Crotor"
+    ]
+  },
+  {
+    "id": "CLIO-TAMBOR-IZQ-2005",
+    "title": "Tambor trasero izquierdo — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Frenos",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 300,
+    "oemCodes": [],
+    "description": "Buen espesor. Precio por pieza.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbrake%2Ccaliper%2Ccar%2Cparts%2Crotor"
+    ]
+  },
+  {
+    "id": "CLIO-TAMBOR-DER-2005",
+    "title": "Tambor trasero derecho — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Frenos",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 300,
+    "oemCodes": [],
+    "description": "Precio por pieza.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbrake%2Ccaliper%2Ccar%2Cparts%2Crotor"
+    ]
+  },
+  {
+    "id": "CLIO-BOOSTER-2005",
+    "title": "Booster/Servofreno — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Frenos",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 900,
+    "oemCodes": [],
+    "description": "Sin fugas. Listo para montar.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbrake%2Ccaliper%2Ccar%2Cparts%2Crotor"
+    ]
+  },
+  {
+    "id": "CLIO-MAESTRO-FRENO-2005",
+    "title": "Cilindro maestro de freno — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Frenos",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 600,
+    "oemCodes": [],
+    "description": "Pieza original en buen estado.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbrake%2Ccaliper%2Ccar%2Cparts%2Crotor"
+    ]
+  },
+  {
+    "id": "CLIO-ABS-SENSOR-DEL-IZQ-2005",
+    "title": "Sensor ABS delantero izquierdo — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Frenos",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 300,
+    "oemCodes": [],
+    "description": "Sensor funcional. Precio por pieza.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbrake%2Ccaliper%2Ccar%2Cengine%2Cparts%2Crotor%2Csensor"
+    ]
+  },
+  {
+    "id": "CLIO-ABS-SENSOR-DEL-DER-2005",
+    "title": "Sensor ABS delantero derecho — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Frenos",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 300,
+    "oemCodes": [],
+    "description": "Precio por pieza.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbrake%2Ccaliper%2Ccar%2Cengine%2Cparts%2Crotor%2Csensor"
+    ]
+  },
+  {
+    "id": "CLIO-FARO-IZQ-2005",
+    "title": "Faro izquierdo — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Carrocería",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 750,
+    "oemCodes": [],
+    "description": "Original, sin grietas, bases completas.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbody%2Cbumper%2Ccar%2Cheadlight%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-FARO-DER-2005",
+    "title": "Faro derecho — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Carrocería",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 750,
+    "oemCodes": [],
+    "description": "Original, listo para instalar.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbody%2Cbumper%2Ccar%2Cheadlight%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-CALAVERA-IZQ-2005",
+    "title": "Calavera izquierda — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Carrocería",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 500,
+    "oemCodes": [],
+    "description": "Buen estado general.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbody%2Cbumper%2Ccar%2Cheadlight%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-CALAVERA-DER-2005",
+    "title": "Calavera derecha — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Carrocería",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 500,
+    "oemCodes": [],
+    "description": "Envío por paquetería.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbody%2Cbumper%2Ccar%2Cheadlight%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-FACIA-DEL-2005",
+    "title": "Fascia delantera — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Carrocería",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 1800,
+    "oemCodes": [],
+    "description": "Con rejillas (si disponible).",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbody%2Cbumper%2Ccar%2Cheadlight%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-FACIA-TRAS-2005",
+    "title": "Fascia trasera — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Carrocería",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 1500,
+    "oemCodes": [],
+    "description": "Lista para pintar.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbody%2Cbumper%2Ccar%2Cheadlight%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-COFRE-2005",
+    "title": "Cofre — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Carrocería",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 2500,
+    "oemCodes": [],
+    "description": "Estructura firme.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbody%2Cbumper%2Ccar%2Cheadlight%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-SALPIC-IZQ-2005",
+    "title": "Salpicadera izquierda — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Carrocería",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 900,
+    "oemCodes": [],
+    "description": "Sin golpes fuertes.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbody%2Cbumper%2Ccar%2Cheadlight%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-SALPIC-DER-2005",
+    "title": "Salpicadera derecha — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Carrocería",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 900,
+    "oemCodes": [],
+    "description": "Lista para pintar.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbody%2Cbumper%2Ccar%2Cheadlight%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-PUERTA-IZQ-2005",
+    "title": "Puerta delantera izquierda (completa) — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Carrocería",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 2200,
+    "oemCodes": [],
+    "description": "Con vidrio y herrajes (según disponibilidad).",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbody%2Cbumper%2Ccar%2Cheadlight%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-PUERTA-DER-2005",
+    "title": "Puerta delantera derecha (completa) — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Carrocería",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 2200,
+    "oemCodes": [],
+    "description": "Completa. Envío por paquetería.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbody%2Cbumper%2Ccar%2Cheadlight%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-PORTON-2005",
+    "title": "Portón trasero — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Carrocería",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 2200,
+    "oemCodes": [],
+    "description": "Incluye medallón si está disponible.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbody%2Cbumper%2Ccar%2Cheadlight%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-ESPEJO-IZQ-2005",
+    "title": "Espejo izquierdo — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Carrocería",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 450,
+    "oemCodes": [],
+    "description": "Manual/eléctrico según versión.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbody%2Cbumper%2Ccar%2Cheadlight%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-ESPEJO-DER-2005",
+    "title": "Espejo derecho — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Carrocería",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 450,
+    "oemCodes": [],
+    "description": "Buen estado.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbody%2Cbumper%2Ccar%2Cheadlight%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-PARRILLA-2005",
+    "title": "Parrilla frontal — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Carrocería",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 400,
+    "oemCodes": [],
+    "description": "Original.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbody%2Cbumper%2Ccar%2Cheadlight%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-ANTENA-BASE-2005",
+    "title": "Base de antena — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Accesorios",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 200,
+    "oemCodes": [],
+    "description": "Con cableado (si disponible).",
+    "images": [
+      "https://source.unsplash.com/800x600/?accessory%2Cauto%2Ccar%2Cparts"
+    ]
+  },
+  {
     "id": "CLIO-TAPA-GAS-2005",
     "title": "Tapa de gasolina — Clio 2005",
     "make": "Renault",
     "model": "Clio",
     "year": 2005,
     "category": "Carrocería",
-    "vehicle": "Clio K4M",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
     "condition": "usado",
     "available": true,
     "price": 250,
     "oemCodes": [],
-    "description": "Original, buen estado. Envío por Mercado Libre o paquetería.",
-    "images": []
-  },
-  {
-    "id": "CLIO-MANIJA-INT-IZQ-2005",
-    "title": "Manija interior puerta izquierda — Clio 2005",
-    "make": "Renault",
-    "model": "Clio",
-    "year": 2005,
-    "category": "Interior",
-    "vehicle": "Clio K4M",
-    "condition": "usado",
-    "available": true,
-    "price": 180,
-    "oemCodes": [],
-    "description": "Plástico sano, sin grietas.",
-    "images": []
-  },
-  {
-    "id": "CLIO-MANIJA-INT-DER-2005",
-    "title": "Manija interior puerta derecha — Clio 2005",
-    "make": "Renault",
-    "model": "Clio",
-    "year": 2005,
-    "category": "Interior",
-    "vehicle": "Clio K4M",
-    "condition": "usado",
-    "available": true,
-    "price": 180,
-    "oemCodes": [],
-    "description": "Plástico sano, sin grietas.",
-    "images": []
+    "description": "Original, buen estado.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbody%2Cbumper%2Ccar%2Cheadlight%2Cparts"
+    ]
   },
   {
     "id": "CLIO-CONTRA-CHAPA-PORTON-2005",
@@ -51,42 +1451,252 @@
     "model": "Clio",
     "year": 2005,
     "category": "Carrocería",
-    "vehicle": "Clio K4M",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
     "condition": "usado",
     "available": true,
     "price": 220,
     "oemCodes": [],
     "description": "Incluye base y tornillería.",
-    "images": []
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbody%2Cbumper%2Ccar%2Cheadlight%2Cparts"
+    ]
   },
   {
-    "id": "KA-MOTOR-1.6-2001",
-    "title": "Motor 1.6 completo con accesorios — Ford Ka 2001",
-    "make": "Ford",
-    "model": "Ka",
-    "year": 2001,
-    "category": "Motor",
-    "vehicle": "Ka 1.6",
+    "id": "CLIO-MANIJA-INT-IZQ-2005",
+    "title": "Manija interior puerta izquierda — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Interior",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
     "condition": "usado",
     "available": true,
-    "price": 12500,
+    "price": 180,
     "oemCodes": [],
-    "description": "Motor completo con arnés y múltiples. Ideal para reemplazo. Factura de compra disponible.",
-    "images": []
+    "description": "Plástico sano. Precio por pieza.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbody%2Cbumper%2Ccar%2Cdoor%2Cheadlight%2Cinterior%2Cparts%2Cseat"
+    ]
   },
   {
-    "id": "ASTRA-1.8-ECU-2002",
-    "title": "Computadora/ECU — Astra 1.8 2002 estándar",
-    "make": "Chevrolet",
-    "model": "Astra",
-    "year": 2002,
+    "id": "CLIO-MANIJA-INT-DER-2005",
+    "title": "Manija interior puerta derecha — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Interior",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 180,
+    "oemCodes": [],
+    "description": "Precio por pieza.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbody%2Cbumper%2Ccar%2Cdoor%2Cheadlight%2Cinterior%2Cparts%2Cseat"
+    ]
+  },
+  {
+    "id": "CLIO-ELEV-DEL-IZQ-2005",
+    "title": "Elevador de vidrio delantero izquierdo — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Interior",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 600,
+    "oemCodes": [],
+    "description": "Manual/eléctrico según versión. Precio por pieza.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cdoor%2Cinterior%2Cparts%2Cseat"
+    ]
+  },
+  {
+    "id": "CLIO-ELEV-DEL-DER-2005",
+    "title": "Elevador de vidrio delantero derecho — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Interior",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 600,
+    "oemCodes": [],
+    "description": "Precio por pieza.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cdoor%2Cinterior%2Cparts%2Cseat"
+    ]
+  },
+  {
+    "id": "CLIO-PANEL-DEL-IZQ-2005",
+    "title": "Panel de puerta delantera izquierda — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Interior",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 500,
+    "oemCodes": [],
+    "description": "Tapicería en buen estado.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbody%2Cbumper%2Ccar%2Cdoor%2Cheadlight%2Cinterior%2Cparts%2Cseat"
+    ]
+  },
+  {
+    "id": "CLIO-PANEL-DEL-DER-2005",
+    "title": "Panel de puerta delantera derecha — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Interior",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 500,
+    "oemCodes": [],
+    "description": "Listo para instalar.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Cbody%2Cbumper%2Ccar%2Cdoor%2Cheadlight%2Cinterior%2Cparts%2Cseat"
+    ]
+  },
+  {
+    "id": "CLIO-ASIENTO-CONDUCTOR-2005",
+    "title": "Asiento conductor — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Interior",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 1200,
+    "oemCodes": [],
+    "description": "Estructura y espuma en buen estado.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cdoor%2Cinterior%2Cparts%2Cseat"
+    ]
+  },
+  {
+    "id": "CLIO-ASIENTO-PASAJERO-2005",
+    "title": "Asiento pasajero — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Interior",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 1200,
+    "oemCodes": [],
+    "description": "Listo para instalar.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cdoor%2Cinterior%2Cparts%2Cseat"
+    ]
+  },
+  {
+    "id": "CLIO-ASIENTO-TRASERO-2005",
+    "title": "Asiento trasero (banco) — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Interior",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 1200,
+    "oemCodes": [],
+    "description": "Completo.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cdoor%2Cinterior%2Cparts%2Cseat"
+    ]
+  },
+  {
+    "id": "CLIO-TABLERO-2005",
+    "title": "Tablero completo — Clio 2005",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Interior",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 1500,
+    "oemCodes": [],
+    "description": "Sin quiebres fuertes.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cdoor%2Cinterior%2Cparts%2Cseat"
+    ]
+  },
+  {
+    "id": "CLIO-CLUSTER-2005",
+    "title": "Clúster/Tablero de instrumentos — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
     "category": "Eléctrico",
-    "vehicle": "Astra 1.8 8v",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
     "condition": "usado",
     "available": true,
-    "price": 1900,
+    "price": 1200,
     "oemCodes": [],
-    "description": "Probada. Pregunta por inmovilizador y BCM.",
-    "images": []
+    "description": "Iluminación y marcadores funcionando.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Celectrical%2Charness%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-ESTEREO-2005",
+    "title": "Estéreo de agencia — Clio (si disponible)",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Interior",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 600,
+    "oemCodes": [],
+    "description": "Código no incluido a menos que se indique.",
+    "images": [
+      "https://source.unsplash.com/800x600/?auto%2Ccar%2Cdoor%2Celectrical%2Charness%2Cinterior%2Cparts%2Cseat"
+    ]
+  },
+  {
+    "id": "CLIO-MOTOR-LIMPIA-2005",
+    "title": "Motor de limpia-parabrisas — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Accesorios",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 500,
+    "oemCodes": [],
+    "description": "Motor funcional.",
+    "images": [
+      "https://source.unsplash.com/800x600/?accessory%2Cauto%2Ccar%2Cparts"
+    ]
+  },
+  {
+    "id": "CLIO-TRICHO-2005",
+    "title": "Trico/enlaces de limpiaparabrisas — Clio",
+    "make": "Renault",
+    "model": "Clio",
+    "year": 2005,
+    "category": "Accesorios",
+    "vehicle": "Clio Initiale Italia 1.6 16V (K4M)",
+    "condition": "usado",
+    "available": true,
+    "price": 300,
+    "oemCodes": [],
+    "description": "Mecanismo completo.",
+    "images": [
+      "https://source.unsplash.com/800x600/?accessory%2Cauto%2Ccar%2Cparts"
+    ]
   }
 ]
