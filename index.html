@@ -79,18 +79,20 @@ const imageSrc = (item) => {
           ? React.createElement("p",{className:"text-zinc-400"},"No hay resultados con los filtros actuales.")
           : React.createElement("div",{className:"grid sm:grid-cols-2 lg:grid-cols-3 gap-6"},
               filtered.map(p=>React.createElement("article",{key:p.id,className:"card"},
-                React.createElement("div",{className:"aspect-[16/10] bg-zinc-900 grid place-items-center text-zinc-600 text-sm"},
-                  (p.images&&p.images[0])? React.createElement("img", {
-  loading: "lazy",
-  src: imageSrc(p),
-  onError: (e) => {
-    e.currentTarget.onerror = null;
-    e.currentTarget.src = placeholder(p.id);
-  },
-  alt: p.title,
-  className: "w-full h-40 object-cover rounded-md"
-})
-,alt:p.title,className:"w-full h-full object-cover"}):"Sin foto"
+            React.createElement(
+  "div",
+  { className: "aspect-[16/10] bg-zinc-900 grid place-items-center text-zinc-600 text-sm" },
+  React.createElement("img", {
+    loading: "lazy",
+    src: imageSrc(p),
+    onError: (e) => {
+      e.currentTarget.onerror = null;
+      e.currentTarget.src = placeholder(p.id);
+    },
+    alt: p.title,
+    className: "w-full h-40 object-cover rounded-md"
+  })
+),
                 ),
                 React.createElement("div",{className:"p-4"},
                   React.createElement("h3",{className:"font-medium"}, p.title),
