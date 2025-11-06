@@ -31,6 +31,14 @@
 </head><body>
   <div id="root" class="min-h-screen"></div>
   <script>
+    <script>
+console.log("React cargado:", typeof React !== "undefined");
+</script>
+  <script>
+window.addEventListener("error", function(e) {
+  console.error("Error capturado:", e.message, e.filename, e.lineno);
+});
+</script>
     const {useEffect,useMemo,useState} = React;
     const mxn=(n)=> (n==null? "A convenir" : n.toLocaleString("es-MX",{style:"currency",currency:"MXN",maximumFractionDigits:0}));
     // FOTOS: placeholder y versión contra caché
